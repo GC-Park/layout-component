@@ -1,6 +1,7 @@
+import { ComponentPropsWithRef } from 'react'
 import { styled } from 'styled-components'
 
-export interface ContainerProps {
+export interface ContainerProps extends ComponentPropsWithRef<'div'> {
   display?: 'none' | 'block' | 'inline' | 'inline-block'
   width?: string
   height?: string
