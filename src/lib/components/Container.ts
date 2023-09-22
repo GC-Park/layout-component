@@ -73,6 +73,10 @@ const Container = styled.div<ContainerProps>`
   cursor: ${({ cursor }) => cursor};
   opacity: ${({ opacity }) => opacity + '%'};
   z-index: ${({ zIndex }) => zIndex};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 export default Container
